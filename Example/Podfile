@@ -9,5 +9,7 @@ target 'AVFoundationHelperRx_Example' do
   
   target 'AVFoundationHelperRx_Tests' do
     inherit! :search_paths
+    pod 'Quick', '~> 2.1.0'
+    pod 'Nimble', '~> 8'
   end
 end

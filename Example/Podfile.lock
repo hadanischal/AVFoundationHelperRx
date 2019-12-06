@@ -2,6 +2,8 @@ PODS:
   - AVFoundationHelperRx (0.1.0):
     - RxCocoa (~> 5.0.1)
     - RxSwift (~> 5.0.1)
+  - Nimble (8.0.4)
+  - Quick (2.1.0)
   - RxCocoa (5.0.1):
     - RxRelay (~> 5)
     - RxSwift (~> 5)
@@ -11,11 +13,15 @@ PODS:
 
 DEPENDENCIES:
   - AVFoundationHelperRx (from `../`)
+  - Nimble (~> 8)
+  - Quick (~> 2.1.0)
   - RxCocoa (~> 5)
   - RxSwift (~> 5)
 
 SPEC REPOS:
   trunk:
+    - Nimble
+    - Quick
     - RxCocoa
     - RxRelay
     - RxSwift
@@ -25,11 +31,13 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  AVFoundationHelperRx: 90f669796025935984ee703c8fdfdb228f8b1072
+  AVFoundationHelperRx: 5baf54b2c5a8b780b9ff5a67f12a9a39bf6f8371
+  Nimble: 18d5360282923225d62b09d781f63abc1a0111fc
+  Quick: 4be43f6634acfa727dd106bdf3929ce125ffa79d
   RxCocoa: e741b9749968e8a143e2b787f1dfbff2b63d0a5c
   RxRelay: 89d54507f4fd4d969e6ec1d4bd7f3673640b4640
   RxSwift: e2dc62b366a3adf6a0be44ba9f405efd4c94e0c4
 
-PODFILE CHECKSUM: 6b58986739a1b9f99d5d14c72eac83e4633c7c29
+PODFILE CHECKSUM: ac952134b91f7e39773525512052b37b01349f6c
 
 COCOAPODS: 1.8.4
