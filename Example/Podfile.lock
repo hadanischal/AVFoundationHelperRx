@@ -1,5 +1,5 @@
 PODS:
-  - AVFoundationHelperRx (0.1.0):
+  - AVFoundationHelperRx (0.2.0):
     - RxCocoa (~> 5.0.1)
     - RxSwift (~> 5.0.1)
   - Nimble (8.0.4)
@@ -31,7 +31,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  AVFoundationHelperRx: 5baf54b2c5a8b780b9ff5a67f12a9a39bf6f8371
+  AVFoundationHelperRx: f6d3cf2c9430a21e0eac6c8d05313773b5c16fc0
   Nimble: 18d5360282923225d62b09d781f63abc1a0111fc
   Quick: 4be43f6634acfa727dd106bdf3929ce125ffa79d
   RxCocoa: e741b9749968e8a143e2b787f1dfbff2b63d0a5c
