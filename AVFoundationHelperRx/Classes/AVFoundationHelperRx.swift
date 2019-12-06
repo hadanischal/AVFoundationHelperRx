@@ -9,6 +9,8 @@ import RxSwift
 import AVFoundation
 
 public final class AVFoundationHelperRx: AVFoundationHelperProtocolRx {
+    
+    public init() {}
 
     // MARK: - Check and Respond to Camera Authorization Status
 
