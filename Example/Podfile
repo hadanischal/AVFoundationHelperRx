@@ -4,11 +4,10 @@ use_frameworks!
 
 target 'AVFoundationHelperRx_Example' do
   pod 'AVFoundationHelperRx', :path => '../'
-
+  pod 'RxSwift', '~> 5'
+  pod 'RxCocoa', '~> 5'
+  
   target 'AVFoundationHelperRx_Tests' do
     inherit! :search_paths
-
-    pod 'Quick', '~> 1.2.0'
-    pod 'Nimble', '~> 7.0'
   end
 end
