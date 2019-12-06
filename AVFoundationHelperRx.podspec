@@ -23,13 +23,16 @@ Pod::Spec.new do |s|
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'hadanischal@gmail.com' => 'hadanischal@gmail.com' }
   s.source           = { :git => 'https://github.com/hadanischal/AVFoundationHelperRx.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.social_media_url = 'https://twitter.com/neeschalhada'
 
   s.swift_version = '5.1'
   s.ios.deployment_target = '11.0'
   s.requires_arc = true
   s.source_files = 'AVFoundationHelperRx/Classes/**/*'
   
+  s.dependency 'RxSwift', '~> 5.0.1'
+  s.dependency 'RxCocoa', '~> 5.0.1'
+
   # s.resource_bundles = {
   #   'AVFoundationHelperRx' => ['AVFoundationHelperRx/Assets/*.png']
   # }
