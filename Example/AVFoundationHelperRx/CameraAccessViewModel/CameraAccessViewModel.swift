@@ -13,7 +13,6 @@ import AVFoundationHelperRx
 enum CameraAccessRoute {
     case showCameraReader
     case alertCameraAccessNeeded
-    case failedLinkedAlert
 }
 
 protocol CameraAccessDataSource: class {
