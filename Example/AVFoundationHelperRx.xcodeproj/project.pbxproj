@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		042325AA239B27F000FA79AA /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 042325A9239B27F000FA79AA /* .swiftlint.yml */; };
+		042325AE239B292200FA79AA /* GeneratedMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042325AC239B290900FA79AA /* GeneratedMocks.swift */; };
+		042325B0239B29D500FA79AA /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042325AF239B29D500FA79AA /* UIViewControllerExtension.swift */; };
 		048C63ED065E165CC165E196 /* Pods_AVFoundationHelperRx_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F1893023983B15B25E4195D /* Pods_AVFoundationHelperRx_Example.framework */; };
 		04A727D7239A20B10006EB86 /* CameraAccessViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A727D6239A20B10006EB86 /* CameraAccessViewModel.swift */; };
 		04A727E6239A483C0006EB86 /* CameraAccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A727E5239A483C0006EB86 /* CameraAccessViewController.swift */; };
@@ -31,6 +34,9 @@
 
 /* Begin PBXFileReference section */
 		0262F929FF6F6CD10006679B /* Pods-AVFoundationHelperRx_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AVFoundationHelperRx_Example.release.xcconfig"; path = "Target Support Files/Pods-AVFoundationHelperRx_Example/Pods-AVFoundationHelperRx_Example.release.xcconfig"; sourceTree = "<group>"; };
+		042325A9239B27F000FA79AA /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		042325AC239B290900FA79AA /* GeneratedMocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratedMocks.swift; sourceTree = "<group>"; };
+		042325AF239B29D500FA79AA /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		04A727D6239A20B10006EB86 /* CameraAccessViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraAccessViewModel.swift; sourceTree = "<group>"; };
 		04A727E5239A483C0006EB86 /* CameraAccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraAccessViewController.swift; sourceTree = "<group>"; };
 		04A727EB239A52450006EB86 /* BundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtension.swift; sourceTree = "<group>"; };
@@ -84,6 +90,7 @@
 		04A727E3239A45AF0006EB86 /* BuildScripts */ = {
 			isa = PBXGroup;
 			children = (
+				042325A9239B27F000FA79AA /* .swiftlint.yml */,
 			);
 			name = BuildScripts;
 			sourceTree = "<group>";
@@ -99,6 +106,7 @@
 		04A727E8239A52200006EB86 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				042325AF239B29D500FA79AA /* UIViewControllerExtension.swift */,
 				04A727EB239A52450006EB86 /* BundleExtension.swift */,
 			);
 			path = Utility;
@@ -162,6 +170,7 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				042325AC239B290900FA79AA /* GeneratedMocks.swift */,
 				607FACEB1AFB9204008FA782 /* Tests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
@@ -209,6 +218,7 @@
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
 				8B53037EC0D3D455AD3D0A55 /* [CP] Embed Pods Frameworks */,
+				042325AB239B28B100FA79AA /* SwiftLint Script */,
 			);
 			buildRules = (
 			);
@@ -285,6 +295,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				042325AA239B27F000FA79AA /* .swiftlint.yml in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
@@ -301,6 +312,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		042325AB239B28B100FA79AA /* SwiftLint Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "SwiftLint Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
 		13F8D77798E63DE7BACDB152 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -406,6 +435,7 @@
 			files = (
 				04A727D7239A20B10006EB86 /* CameraAccessViewModel.swift in Sources */,
 				04A727E6239A483C0006EB86 /* CameraAccessViewController.swift in Sources */,
+				042325B0239B29D500FA79AA /* UIViewControllerExtension.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				04A727EC239A52450006EB86 /* BundleExtension.swift in Sources */,
 			);
@@ -416,6 +446,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				042325AE239B292200FA79AA /* GeneratedMocks.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

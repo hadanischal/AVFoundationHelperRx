@@ -13,6 +13,8 @@ import RxCocoa
 class CameraAccessViewController: UIViewController {
 
     @IBOutlet weak var cameraAccessButton: UIButton!
+    @IBOutlet weak var photoImageView: UIImageView!
+
     private var viewModel: CameraAccessDataSource = CameraAccessViewModel()
     private let disposeBag = DisposeBag()
 
@@ -26,13 +28,16 @@ class CameraAccessViewController: UIViewController {
 
         viewModel
             .transformInput(linkButtonTaps: cameraAccessObservable)
-            .subscribe(onNext: { [weak self] loginRoute in
-                if loginRoute == .alertCameraAccessNeeded {
+            .subscribe(onNext: { [weak self] route in
+                switch route {
+                case .showCameraReader:
+                    self?.showCameraReader()
+                case .alertCameraAccessNeeded:
                     self?.alertCameraAccessNeeded()
                 }
-                print("loginRoute:", loginRoute)
-            }, onError: { error in
-                print("error:", error)
+                print("route:", route)
+                }, onError: { error in
+                    print("error:", error)
             }).disposed(by: disposeBag)
     }
 
@@ -56,5 +61,39 @@ class CameraAccessViewController: UIViewController {
 
         self.present(alert, animated: true, completion: nil)
     }
+}
 
+extension CameraAccessViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+
+    private func showCameraReader() {
+        if UIImagePickerController.isSourceTypeAvailable(.camera) {
+            let imagePicker = UIImagePickerController()
+            imagePicker.sourceType = .camera
+            imagePicker.allowsEditing = true
+            imagePicker.delegate = self
+            present(imagePicker, animated: true)
+
+        } else if UIImagePickerController.isSourceTypeAvailable(.photoLibrary) {
+            let imagePicker = UIImagePickerController()
+            imagePicker.sourceType = .photoLibrary
+            imagePicker.allowsEditing = true
+            imagePicker.delegate = self
+            present(imagePicker, animated: true)
+
+        } else {
+            self.showAlertView(withTitle: "Camera Access not avilabke", andMessage: "This feature requires Camera Access")
+        }
+    }
+
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey: Any]) {
+        picker.dismiss(animated: true)
+
+        guard let image = info[.editedImage] as? UIImage else {
+            print("No image found")
+            return
+        }
+        self.photoImageView.image = image
+        // print out the image size as a test
+        print(image.size)
+    }
 }
