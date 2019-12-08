@@ -19,8 +19,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="x9f-MD-RQa">
+                                <rect key="frame" x="41.333333333333343" y="107.99999999999997" width="331.33333333333326" height="331.33333333333326"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="x9f-MD-RQa" secondAttribute="height" multiplier="1:1" id="hwX-gX-P0T"/>
+                                </constraints>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3cd-tf-Wtw">
-                                <rect key="frame" x="41.666666666666657" y="425.66666666666669" width="331" height="45"/>
+                                <rect key="frame" x="41.666666666666657" y="469.33333333333331" width="331" height="44.999999999999943"/>
                                 <color key="backgroundColor" red="0.0" green="0.4793452024" blue="0.99908632040000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="NmY-9y-TJo"/>
@@ -33,14 +39,19 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="3cd-tf-Wtw" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="I2h-nX-yw0"/>
+                            <constraint firstItem="3cd-tf-Wtw" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" priority="750" id="I2h-nX-yw0"/>
+                            <constraint firstItem="x9f-MD-RQa" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="Jlm-05-SGI"/>
                             <constraint firstItem="3cd-tf-Wtw" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="P3c-8h-XB3"/>
+                            <constraint firstItem="x9f-MD-RQa" firstAttribute="width" secondItem="kh9-bI-dsS" secondAttribute="width" multiplier="0.8" id="W1H-5Z-VhS"/>
+                            <constraint firstItem="x9f-MD-RQa" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="20" id="jWM-qt-2Md"/>
+                            <constraint firstItem="3cd-tf-Wtw" firstAttribute="top" secondItem="x9f-MD-RQa" secondAttribute="bottom" constant="30" id="moq-uT-ZCd"/>
                             <constraint firstItem="3cd-tf-Wtw" firstAttribute="width" secondItem="kh9-bI-dsS" secondAttribute="width" multiplier="0.799517" id="yDt-3e-aqB"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="AVFoundationHelper" id="D8c-u6-VJM"/>
                     <connections>
                         <outlet property="cameraAccessButton" destination="3cd-tf-Wtw" id="ur8-bJ-YEA"/>
+                        <outlet property="photoImageView" destination="x9f-MD-RQa" id="KOq-29-vDZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
