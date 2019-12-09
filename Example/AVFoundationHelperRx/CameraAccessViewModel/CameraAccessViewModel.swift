@@ -16,7 +16,7 @@ enum CameraAccessRoute {
 }
 
 protocol CameraAccessDataSource: class {
-    func transformInput(linkButtonTaps taps: Observable<Void>) -> Observable<CameraAccessRoute>
+    func transformInput(CameraButtonTaps taps: Observable<Void>) -> Observable<CameraAccessRoute>
 }
 
 final class CameraAccessViewModel: CameraAccessDataSource {
@@ -27,7 +27,7 @@ final class CameraAccessViewModel: CameraAccessDataSource {
         self.avFoundation = avFoundation
     }
 
-    func transformInput(linkButtonTaps taps: Observable<Void>) -> Observable<CameraAccessRoute> {
+    func transformInput(CameraButtonTaps taps: Observable<Void>) -> Observable<CameraAccessRoute> {
         taps.asObservable()
             .flatMap({ [weak self] _ -> Observable<CameraAccessRoute> in
                 return self?.handelCameraAccessButtonTaps() ?? Observable.error(RxError.unknown)
