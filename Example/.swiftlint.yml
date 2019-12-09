@@ -1,0 +1,11 @@
+opt_in_rules:
+    - empty_count
+
+excluded: # paths to ignore during linting. Takes precedence over `included`.
+    - Carthage
+    - Pods
+    - Pods/
+
+line_length:
+- 300 # warning
+- 400 # error
