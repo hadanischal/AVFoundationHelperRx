@@ -27,7 +27,8 @@ class CameraAccessViewController: UIViewController {
         let cameraAccessObservable = cameraAccessButton.rx.tap.asObservable()
 
         viewModel
-            .transformInput(linkButtonTaps: cameraAccessObservable)
+            .transformInput(CameraButtonTaps: cameraAccessObservable)
+            .observeOn(MainScheduler.instance)
             .subscribe(onNext: { [weak self] route in
                 switch route {
                 case .showCameraReader:
