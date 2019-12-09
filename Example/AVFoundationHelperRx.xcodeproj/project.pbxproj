@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		042325AA239B27F000FA79AA /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 042325A9239B27F000FA79AA /* .swiftlint.yml */; };
-		042325AE239B292200FA79AA /* GeneratedMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042325AC239B290900FA79AA /* GeneratedMocks.swift */; };
 		042325B0239B29D500FA79AA /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042325AF239B29D500FA79AA /* UIViewControllerExtension.swift */; };
+		046249B7239BC61A00F178C1 /* GeneratedMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042325AC239B290900FA79AA /* GeneratedMocks.swift */; };
+		046249B8239BC61D00F178C1 /* CameraAccessViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046249A7239BAE2500F178C1 /* CameraAccessViewModelTests.swift */; };
 		048C63ED065E165CC165E196 /* Pods_AVFoundationHelperRx_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F1893023983B15B25E4195D /* Pods_AVFoundationHelperRx_Example.framework */; };
 		04A727D7239A20B10006EB86 /* CameraAccessViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A727D6239A20B10006EB86 /* CameraAccessViewModel.swift */; };
 		04A727E6239A483C0006EB86 /* CameraAccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A727E5239A483C0006EB86 /* CameraAccessViewController.swift */; };
 		04A727EC239A52450006EB86 /* BundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A727EB239A52450006EB86 /* BundleExtension.swift */; };
+		4E2B6CBC88AE871860FF405B /* Pods_AVFoundationHelperRx_ExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF8FD9349177C20C7E68280D /* Pods_AVFoundationHelperRx_ExampleTests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
@@ -23,6 +25,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		046249B2239BBCE900F178C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 607FACCF1AFB9204008FA782;
+			remoteInfo = AVFoundationHelperRx_Example;
+		};
 		607FACE61AFB9204008FA782 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
@@ -37,12 +46,18 @@
 		042325A9239B27F000FA79AA /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		042325AC239B290900FA79AA /* GeneratedMocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratedMocks.swift; sourceTree = "<group>"; };
 		042325AF239B29D500FA79AA /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		046249A7239BAE2500F178C1 /* CameraAccessViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraAccessViewModelTests.swift; sourceTree = "<group>"; };
+		046249AD239BBCE800F178C1 /* AVFoundationHelperRx_ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AVFoundationHelperRx_ExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		046249B1239BBCE900F178C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04A727D6239A20B10006EB86 /* CameraAccessViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraAccessViewModel.swift; sourceTree = "<group>"; };
 		04A727E5239A483C0006EB86 /* CameraAccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraAccessViewController.swift; sourceTree = "<group>"; };
 		04A727EB239A52450006EB86 /* BundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtension.swift; sourceTree = "<group>"; };
+		1D869EB8E72181140B25FCF3 /* Pods-AVFoundationHelperRx_Example-AVFoundationHelperRx_ExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AVFoundationHelperRx_Example-AVFoundationHelperRx_ExampleTests.debug.xcconfig"; path = "Target Support Files/Pods-AVFoundationHelperRx_Example-AVFoundationHelperRx_ExampleTests/Pods-AVFoundationHelperRx_Example-AVFoundationHelperRx_ExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		274FFB242BDBECC5B7051BB5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		2DA77CEAA4DBEB3805420903 /* Pods-AVFoundationHelperRx_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AVFoundationHelperRx_Tests.release.xcconfig"; path = "Target Support Files/Pods-AVFoundationHelperRx_Tests/Pods-AVFoundationHelperRx_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		343964D5A2DB2FB09CB1772E /* Pods-AVFoundationHelperRx_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AVFoundationHelperRx_Tests.debug.xcconfig"; path = "Target Support Files/Pods-AVFoundationHelperRx_Tests/Pods-AVFoundationHelperRx_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		4B6B1CF69B83036CF12239B3 /* Pods-AVFoundationHelperRx_Example-AVFoundationHelperRx_ExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AVFoundationHelperRx_Example-AVFoundationHelperRx_ExampleTests.release.xcconfig"; path = "Target Support Files/Pods-AVFoundationHelperRx_Example-AVFoundationHelperRx_ExampleTests/Pods-AVFoundationHelperRx_Example-AVFoundationHelperRx_ExampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		4D55067DA873637659D624BD /* Pods-AVFoundationHelperRx_ExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AVFoundationHelperRx_ExampleTests.debug.xcconfig"; path = "Target Support Files/Pods-AVFoundationHelperRx_ExampleTests/Pods-AVFoundationHelperRx_ExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* AVFoundationHelperRx_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AVFoundationHelperRx_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -54,12 +69,22 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		7F1893023983B15B25E4195D /* Pods_AVFoundationHelperRx_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AVFoundationHelperRx_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		941E5B7DC74FD38ABD558C4A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		AF8FD9349177C20C7E68280D /* Pods_AVFoundationHelperRx_ExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AVFoundationHelperRx_ExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1E54AD37019114A98C133E4 /* AVFoundationHelperRx.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = AVFoundationHelperRx.podspec; path = ../AVFoundationHelperRx.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		C7233AB77AD349C4541268AE /* Pods_AVFoundationHelperRx_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AVFoundationHelperRx_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3522822EA8E634EB4ED6561 /* Pods-AVFoundationHelperRx_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AVFoundationHelperRx_Example.debug.xcconfig"; path = "Target Support Files/Pods-AVFoundationHelperRx_Example/Pods-AVFoundationHelperRx_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		F866F652CEAEB3E4034CB9D0 /* Pods-AVFoundationHelperRx_ExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AVFoundationHelperRx_ExampleTests.release.xcconfig"; path = "Target Support Files/Pods-AVFoundationHelperRx_ExampleTests/Pods-AVFoundationHelperRx_ExampleTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		046249AA239BBCE800F178C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E2B6CBC88AE871860FF405B /* Pods_AVFoundationHelperRx_ExampleTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		607FACCD1AFB9204008FA782 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -79,6 +104,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		046249AE239BBCE800F178C1 /* AVFoundationHelperRx_ExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				042325AC239B290900FA79AA /* GeneratedMocks.swift */,
+				046249A7239BAE2500F178C1 /* CameraAccessViewModelTests.swift */,
+				046249B1239BBCE900F178C1 /* Info.plist */,
+			);
+			path = AVFoundationHelperRx_ExampleTests;
+			sourceTree = "<group>";
+		};
 		04A727D5239A209B0006EB86 /* CameraAccessViewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +152,7 @@
 			children = (
 				7F1893023983B15B25E4195D /* Pods_AVFoundationHelperRx_Example.framework */,
 				C7233AB77AD349C4541268AE /* Pods_AVFoundationHelperRx_Tests.framework */,
+				AF8FD9349177C20C7E68280D /* Pods_AVFoundationHelperRx_ExampleTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -127,6 +163,7 @@
 				04A727E3239A45AF0006EB86 /* BuildScripts */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for AVFoundationHelperRx */,
+				046249AE239BBCE800F178C1 /* AVFoundationHelperRx_ExampleTests */,
 				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
 				E724CAF72EBAD774F722076E /* Pods */,
@@ -139,6 +176,7 @@
 			children = (
 				607FACD01AFB9204008FA782 /* AVFoundationHelperRx_Example.app */,
 				607FACE51AFB9204008FA782 /* AVFoundationHelperRx_Tests.xctest */,
+				046249AD239BBCE800F178C1 /* AVFoundationHelperRx_ExampleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -170,7 +208,6 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				042325AC239B290900FA79AA /* GeneratedMocks.swift */,
 				607FACEB1AFB9204008FA782 /* Tests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
@@ -202,6 +239,10 @@
 				0262F929FF6F6CD10006679B /* Pods-AVFoundationHelperRx_Example.release.xcconfig */,
 				343964D5A2DB2FB09CB1772E /* Pods-AVFoundationHelperRx_Tests.debug.xcconfig */,
 				2DA77CEAA4DBEB3805420903 /* Pods-AVFoundationHelperRx_Tests.release.xcconfig */,
+				1D869EB8E72181140B25FCF3 /* Pods-AVFoundationHelperRx_Example-AVFoundationHelperRx_ExampleTests.debug.xcconfig */,
+				4B6B1CF69B83036CF12239B3 /* Pods-AVFoundationHelperRx_Example-AVFoundationHelperRx_ExampleTests.release.xcconfig */,
+				4D55067DA873637659D624BD /* Pods-AVFoundationHelperRx_ExampleTests.debug.xcconfig */,
+				F866F652CEAEB3E4034CB9D0 /* Pods-AVFoundationHelperRx_ExampleTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -209,6 +250,26 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		046249AC239BBCE800F178C1 /* AVFoundationHelperRx_ExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 046249B6239BBCE900F178C1 /* Build configuration list for PBXNativeTarget "AVFoundationHelperRx_ExampleTests" */;
+			buildPhases = (
+				70280FC3AFF3EC8947173B07 /* [CP] Check Pods Manifest.lock */,
+				046249A9239BBCE800F178C1 /* Sources */,
+				046249AA239BBCE800F178C1 /* Frameworks */,
+				046249AB239BBCE800F178C1 /* Resources */,
+				0D43A9FB2B7D47B9DB59A38C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				046249B3239BBCE900F178C1 /* PBXTargetDependency */,
+			);
+			name = AVFoundationHelperRx_ExampleTests;
+			productName = AVFoundationHelperRx_ExampleTests;
+			productReference = 046249AD239BBCE800F178C1 /* AVFoundationHelperRx_ExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		607FACCF1AFB9204008FA782 /* AVFoundationHelperRx_Example */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "AVFoundationHelperRx_Example" */;
@@ -237,7 +298,7 @@
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
-				EFD3551D886475BC1825179F /* [CP] Embed Pods Frameworks */,
+				CADC2AA0492F279E464F5F02 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -255,10 +316,15 @@
 		607FACC81AFB9204008FA782 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0830;
+				LastSwiftUpdateCheck = 1120;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
+					046249AC239BBCE800F178C1 = {
+						CreatedOnToolsVersion = 11.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 607FACCF1AFB9204008FA782;
+					};
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
 						LastSwiftMigration = 0900;
@@ -286,11 +352,19 @@
 			targets = (
 				607FACCF1AFB9204008FA782 /* AVFoundationHelperRx_Example */,
 				607FACE41AFB9204008FA782 /* AVFoundationHelperRx_Tests */,
+				046249AC239BBCE800F178C1 /* AVFoundationHelperRx_ExampleTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		046249AB239BBCE800F178C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		607FACCE1AFB9204008FA782 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -329,6 +403,40 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		0D43A9FB2B7D47B9DB59A38C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AVFoundationHelperRx_ExampleTests/Pods-AVFoundationHelperRx_ExampleTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AVFoundationHelperRx/AVFoundationHelperRx.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Cuckoo/Cuckoo.framework",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+				"${BUILT_PRODUCTS_DIR}/RxBlocking/RxBlocking.framework",
+				"${BUILT_PRODUCTS_DIR}/RxTest/RxTest.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AVFoundationHelperRx.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cuckoo.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxBlocking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxTest.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AVFoundationHelperRx_ExampleTests/Pods-AVFoundationHelperRx_ExampleTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 		13F8D77798E63DE7BACDB152 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -374,6 +482,28 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		70280FC3AFF3EC8947173B07 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AVFoundationHelperRx_ExampleTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		8B53037EC0D3D455AD3D0A55 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -398,13 +528,16 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AVFoundationHelperRx_Example/Pods-AVFoundationHelperRx_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		EFD3551D886475BC1825179F /* [CP] Embed Pods Frameworks */ = {
+		CADC2AA0492F279E464F5F02 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-AVFoundationHelperRx_Tests/Pods-AVFoundationHelperRx_Tests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AVFoundationHelperRx/AVFoundationHelperRx.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Cuckoo/Cuckoo.framework",
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
@@ -414,6 +547,9 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AVFoundationHelperRx.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cuckoo.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
@@ -429,6 +565,15 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		046249A9239BBCE800F178C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				046249B8239BC61D00F178C1 /* CameraAccessViewModelTests.swift in Sources */,
+				046249B7239BC61A00F178C1 /* GeneratedMocks.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		607FACCC1AFB9204008FA782 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -446,13 +591,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
-				042325AE239B292200FA79AA /* GeneratedMocks.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		046249B3239BBCE900F178C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 607FACCF1AFB9204008FA782 /* AVFoundationHelperRx_Example */;
+			targetProxy = 046249B2239BBCE900F178C1 /* PBXContainerItemProxy */;
+		};
 		607FACE71AFB9204008FA782 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 607FACCF1AFB9204008FA782 /* AVFoundationHelperRx_Example */;
@@ -480,6 +629,63 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		046249B4239BBCE900F178C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D55067DA873637659D624BD /* Pods-AVFoundationHelperRx_ExampleTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = AVFoundationHelperRx_ExampleTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "hadanischal.AVFoundationHelperRx-ExampleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AVFoundationHelperRx_Example.app/AVFoundationHelperRx_Example";
+			};
+			name = Debug;
+		};
+		046249B5239BBCE900F178C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F866F652CEAEB3E4034CB9D0 /* Pods-AVFoundationHelperRx_ExampleTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = AVFoundationHelperRx_ExampleTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "hadanischal.AVFoundationHelperRx-ExampleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AVFoundationHelperRx_Example.app/AVFoundationHelperRx_Example";
+			};
+			name = Release;
+		};
 		607FACED1AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -656,6 +862,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		046249B6239BBCE900F178C1 /* Build configuration list for PBXNativeTarget "AVFoundationHelperRx_ExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				046249B4239BBCE900F178C1 /* Debug */,
+				046249B5239BBCE900F178C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "AVFoundationHelperRx" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

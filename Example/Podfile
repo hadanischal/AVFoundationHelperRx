@@ -1,15 +1,33 @@
 platform :ios, '12.0'
-
 use_frameworks!
+inhibit_all_warnings!
 
-target 'AVFoundationHelperRx_Example' do
+def main_pods
   pod 'AVFoundationHelperRx', :path => '../'
   pod 'RxSwift', '~> 5'
   pod 'RxCocoa', '~> 5'
-  
-  target 'AVFoundationHelperRx_Tests' do
-    inherit! :search_paths
-    pod 'Quick', '~> 2.1.0'
-    pod 'Nimble', '~> 8'
-  end
+  pod 'SwiftLint'
+end
+
+def shared_pods_test
+  pod 'Quick', '~> 2.1.0'
+  pod 'Nimble', '~> 8'
+  pod 'RxBlocking', '~> 5.0.0'
+  pod 'RxTest',     '~> 5.0.0'
+  pod 'Cuckoo', '~> 1.0.6'
+end
+
+target 'AVFoundationHelperRx_Example' do
+  main_pods
+end
+
+target 'AVFoundationHelperRx_Tests' do
+  inherit! :search_paths
+  main_pods
+  shared_pods_test
+end
+
+target 'AVFoundationHelperRx_ExampleTests' do
+  main_pods
+  shared_pods_test
 end
