@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'AVFoundationHelperRx'
-  s.version          = '0.3.0'
+  s.version          = '0.4.0'
   s.summary          = "AVFoundation helper classes which uses RxSwift"
   s.description          = 'AVFoundationHelperRx is AVFoundation helper classes which uses RxSwift for managing AVAssets and so on. These are used in turn by iOS specific classes..'
 
