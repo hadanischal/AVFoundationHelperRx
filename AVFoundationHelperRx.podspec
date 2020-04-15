@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'AVFoundationHelperRx'
-  s.version          = '0.4.0'
+  s.version          = '0.5.0'
   s.summary          = "AVFoundation helper classes which uses RxSwift"
   s.description          = 'AVFoundationHelperRx is AVFoundation helper classes which uses RxSwift for managing AVAssets and so on. These are used in turn by iOS specific classes..'
 
@@ -25,13 +25,13 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/hadanischal/AVFoundationHelperRx.git', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/neeschalhada'
 
-  s.swift_version = '5.1'
+  s.swift_version = '5.2'
   s.ios.deployment_target = '11.0'
   s.requires_arc = true
   s.source_files = 'AVFoundationHelperRx/Classes/**/*'
   
-  s.dependency 'RxSwift', '~> 5.0.1'
-  s.dependency 'RxCocoa', '~> 5.0.1'
+  s.dependency 'RxSwift', '~> 5.1.1'
+  s.dependency 'RxCocoa', '~> 5.1.1'
 
   # s.resource_bundles = {
   #   'AVFoundationHelperRx' => ['AVFoundationHelperRx/Assets/*.png']
